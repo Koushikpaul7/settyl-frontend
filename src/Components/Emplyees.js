@@ -4,7 +4,7 @@ import Toggle from './Toogle';
 const Emplyees = () => {
     const [list, setList]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/employee',{
+        fetch('https://serene-atoll-84019.herokuapp.com/employee',{
             method:"GET",
         })
         .then(res=>res.json())
@@ -16,7 +16,7 @@ const Emplyees = () => {
     
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/employee/${id}`;
+        const url = `https://serene-atoll-84019.herokuapp.com/employee/${id}`;
         console.log(url);
         fetch(url, {
           method: "DELETE",

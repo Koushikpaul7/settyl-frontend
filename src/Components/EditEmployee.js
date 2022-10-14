@@ -7,7 +7,7 @@ const EditEmployee = () => {
     const [salary, setsalary] = useState('');
     const [age, setage] = useState('');
     useEffect(()=>{
-        fetch(`http://localhost:5000/employee/${id}`,{
+        fetch(`https://serene-atoll-84019.herokuapp.com/employee/${id}`,{
             method:"GET",
             headers:{
                 "content-type":"application/json"
@@ -21,7 +21,7 @@ const EditEmployee = () => {
         
        
         const list={name,salary,age}
-      fetch(`http://localhost:5000/employee/${id}`,{
+      fetch(`https://serene-atoll-84019.herokuapp.com/employee/${id}`,{
         method:"PUT",
         headers:{
             "content-type":"application/json"

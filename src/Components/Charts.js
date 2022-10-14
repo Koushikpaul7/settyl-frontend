@@ -3,7 +3,7 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis,Tooltip,BarChart,Bar,Legen
 const Charts = () => {
     const [data,setData]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/employee')
+        fetch('https://serene-atoll-84019.herokuapp.com/employee')
         .then(res=>res.json())
         .then(data=>setData(data))
     },[])

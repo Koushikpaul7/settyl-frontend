@@ -5,7 +5,7 @@ const AddEmployee = () => {
     const onSubmit = (data,event) => {
         console.log(data);
 
-        const url=`http://localhost:5000/employee`;
+        const url=`https://serene-atoll-84019.herokuapp.com/employee`;
         fetch(url,{
             method:'POST',
             headers: {
